@@ -1,14 +1,12 @@
 /* CHANGE RATE OF VIDEO */
 
 var vid = document.getElementById("video-loop");
-
-var index = document.querySelector(".container-index");
-var about = document.querySelector(".container-about");
-
 var sPath = window.location.pathname;
 var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
 
 if(sPage == "index.html"){
+  var about = document.querySelector(".container-about");
+
   vid.playbackRate = 0.5;
 
   vid.addEventListener("mouseover",function(){
@@ -18,6 +16,8 @@ if(sPage == "index.html"){
   vid.addEventListener("mouseout",function(){
     vid.playbackRate = 0.5;
   });
+}else{
+  var index = document.querySelector(".container-index");
 }
 
 /* SLIDE */
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     if(sPage == "index.html"){
       index.classList.remove("left-start");
       index.classList.add("is-ready");
-    } else {
+    } else if(sPage == "about.html") {
       about.classList.remove("right-start");
       about.classList.add("is-ready");
     }
@@ -46,7 +46,7 @@ Array.from(btn).forEach(btn=>{
         index.classList.remove('is-ready');
       },1700);
 
-    } else {
+    } else if(sPage == "about.html") {
       about.classList.add("blur");
       about.classList.add('left-remove');
       setTimeout(function(){
