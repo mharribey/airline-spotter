@@ -1,0 +1,30 @@
+/* HOME */
+
+@media screen and (max-width:1080px){
+  .container video {
+    width:700px !important;
+  }
+}
+
+@media screen and (max-width:750px){
+  .container video {
+    width:400px !important;
+  }
+}
+
+/* ABOUT */
+
+@media screen and (max-width:1040px){
+  .about-content {
+    margin-top: 0;
+  }
+  .paraf {
+    width:100%;
+  }
+  .container-about {
+    padding:0 2em;
+  }
+  .about-infos {
+    flex-direction: column;
+  }
+}
