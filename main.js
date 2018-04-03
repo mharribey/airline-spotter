@@ -5,7 +5,7 @@ var sPath = window.location.pathname;
 var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
 
 if(sPage == "index.html"){
-  var about = document.querySelector(".container-about");
+  var index = document.querySelector(".container-index");
 
   vid.playbackRate = 0.5;
 
@@ -16,8 +16,9 @@ if(sPage == "index.html"){
   vid.addEventListener("mouseout",function(){
     vid.playbackRate = 0.5;
   });
+  
 }else{
-  var index = document.querySelector(".container-index");
+  var about = document.querySelector(".container-about");
 }
 
 /* SLIDE */
@@ -40,12 +41,11 @@ Array.from(btn).forEach(btn=>{
   btn.addEventListener("click",()=>{
     if(sPage == "index.html"){
       index.classList.add("blur");
-      index.classList.add('right-remove');
+      index.classList.add("right-remove");
       setTimeout(function(){
         index.classList.remove('is-ready');
         index.classList.remove('is-ready');
       },1700);
-
     } else if(sPage == "about.html") {
       about.classList.add("blur");
       about.classList.add('left-remove');
