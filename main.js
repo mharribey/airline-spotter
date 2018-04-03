@@ -17,12 +17,3 @@ if(sPage == "index.html"){
     vid.playbackRate = 0.5;
   });
 }
-
-/* CHECK IF DEVICE IF MOBILE */
-
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-  alert("mobile");
-  document.html.style.backgroundColor = "rbg(255,246,255)";
-}else{
-  alert("desktop");
-}
