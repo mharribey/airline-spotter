@@ -1,14 +1,18 @@
 /* HOME */
 
 @media screen and (max-width:1080px){
-  .container video {
+  .container video, .container img {
     width:700px !important;
   }
 }
 
 @media screen and (max-width:750px){
   .container video {
+    display: none !important;
+  }
+  .container img {
     width:400px !important;
+    display:block !important;
   }
 }
 

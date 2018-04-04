@@ -50,9 +50,15 @@ p,a {
 
 /* HOME */
 
-.container video {
+.container video, .container img {
   width:1052px;
   height:auto;
+}
+.container video {
+  display: block;
+}
+.container img {
+  display: none;
 }
 
 .container .bottom-btn {
