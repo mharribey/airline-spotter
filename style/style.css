@@ -101,12 +101,10 @@ hr {
 .left-start {
   opacity: 0 !important;
   transform: translateX(-1500px) !important;
-  transition-duration: 1s;
 }
 .right-start {
   opacity: 0 !important;
   transform: translateX(1500px) !important;
-  transition-duration: 1s;
 }
 .is-ready{
     opacity: 1 !important;
